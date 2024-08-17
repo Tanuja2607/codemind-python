@@ -1,0 +1,6 @@
+base=float(input())
+exponent=float(input())
+import math
+print(math.floor(pow(base,exponent)))
+print(math.ceil(pow(base,exponent)))
+print(round(pow(base,exponent),2))

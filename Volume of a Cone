@@ -1,0 +1,4 @@
+r=float(input());
+h=float(input());
+Volume=((1/3)*(3.14*r*r*h))
+print(round(Volume,3))

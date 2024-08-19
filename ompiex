@@ -1,0 +1,9 @@
+a=2+5j
+b=2+3j
+c=2+4j
+print(a,b,c,end="")
+print(type(a))
+d=complex(input())
+print(d)
+print(d.real)
+print(d.imag)

@@ -1,0 +1,4 @@
+a,b,c=map(int,input("enter number: ").split())
+print(a,b,c,end="")
+a,b=input("enter names: ").split()
+print(a,b,end="")

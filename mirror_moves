@@ -1,0 +1,18 @@
+T = int(input())
+
+for _ in range(T):
+    N, K = map(int, input().split())
+
+    if K == N:
+        print(0)
+    
+    elif N + 1 - K == N:
+        print(1)
+    
+    else:
+        
+        move_right = N - K
+        
+        move_left_and_mirror = (K - 1) + 1 + (N - (N + 1 - 1))  # simplified as (K-1)+1
+        
+        print(min(move_right, move_left_and_mirror))

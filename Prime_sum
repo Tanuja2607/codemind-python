@@ -1,0 +1,14 @@
+t = int(input())
+
+for _ in range(t):
+    n = int(input())
+    arr = list(map(int, input().split()))
+    c1 = arr.count(1)
+    c2 = arr.count(2)
+    c3 = arr.count(3)
+    pairs_11 = c1 * (c1 - 1) // 2
+    pairs_12 = c1 * c2
+    pairs_23 = c2 * c3
+    total_pairs = pairs_11 + pairs_12 + pairs_23
+    print(total_pairs)
+

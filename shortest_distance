@@ -1,0 +1,17 @@
+def manhattan_distance(x1, y1, x2, y2):
+    return abs(x1 - x2) + abs(y1 - y2)
+
+ 
+T = int(input())   
+for _ in range(T):
+    N, A, B = map(int, input().split())   
+    min_distance = float('inf')   
+    
+    for _ in range(N):
+        X, Y = map(int, input().split()) 
+        dist = manhattan_distance(A, B, X, Y)
+        if dist < min_distance:
+            min_distance = dist 
+    
+    print(min_distance)
+

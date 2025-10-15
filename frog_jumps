@@ -1,0 +1,11 @@
+T = int(input())
+for _ in range(T):
+    N = int(input())
+    position = N
+    for i in range(1, N):
+        if i % 2 == 1:
+            position = position - (N - i)
+        else:
+            position = position + (N - i)
+
+    print(position)

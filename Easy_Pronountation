@@ -1,0 +1,23 @@
+def is_easy_to_pronounce(word):
+    vowels = {'a', 'e', 'i', 'o', 'u'}
+    consecutive_consonants = 0
+    
+    for ch in word:
+        if ch not in vowels:  
+            consecutive_consonants += 1
+            if consecutive_consonants >= 4:
+                return False  
+        else:
+            consecutive_consonants = 0  
+    return True
+
+
+T = int(input())  
+for _ in range(T):
+    N = int(input())  
+    S = input().strip()
+    
+    if is_easy_to_pronounce(S):
+        print("YES")
+    else:
+        print("NO")

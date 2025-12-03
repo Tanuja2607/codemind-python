@@ -1,0 +1,7 @@
+x=int(input())
+for i in range(x):
+    y=int(input())
+    if(y>=67 and y<=45000):
+        print("yes")
+    else:
+        print("no")

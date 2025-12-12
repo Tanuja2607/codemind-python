@@ -1,0 +1,6 @@
+x,y=map(int,input().split())
+e=x-y
+if e>=18:
+    print("rcb")
+else:
+    print("csk")

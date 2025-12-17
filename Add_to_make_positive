@@ -1,0 +1,14 @@
+import math
+
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    arr = list(map(int, input().split()))
+    
+    total_sum = sum(arr)
+    
+    if total_sum >= 0:
+        print(0)
+    else:
+        x = math.ceil((-total_sum) / n)
+        print(x)

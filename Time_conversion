@@ -1,0 +1,38 @@
+#!/bin/python3
+
+import os
+
+#
+# Complete the 'timeConversion' function below.
+#
+# The function is expected to return a STRING.
+# The function accepts STRING s as parameter.
+#
+
+def timeConversion(s):
+    # Extract hour, minute, second, and period (AM/PM)
+    hour = int(s[:2])
+    minute = s[3:5]
+    second = s[6:8]
+    period = s[8:]
+
+    if period == "AM":
+        if hour == 12:
+            hour = 0
+    else:  # PM
+        if hour != 12:
+            hour += 12
+
+    # Format hour to two digits and return result
+    return f"{hour:02d}:{minute}:{second}"
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    s = input().strip()
+
+    result = timeConversion(s)
+
+    fptr.write(result + '\n')
+
+    fptr.close()

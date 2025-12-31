@@ -1,0 +1,7 @@
+N, M = map(int, input().split())
+
+# Calculate maximum number of happy customers
+happy_customers = min(N, M - N)
+
+# Output result
+print(happy_customers)

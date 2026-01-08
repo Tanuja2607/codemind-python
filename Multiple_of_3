@@ -1,0 +1,8 @@
+N = int(input())
+r = N % 3
+if r == 0:
+    print(N)
+elif r == 1:
+    print(N - 1)
+else:
+    print(N + 1)

@@ -1,0 +1,22 @@
+class Solution:
+    def majorityElement(self, arr):
+        #code here]
+        n = len(arr)
+        d = {}
+        if n == 1:
+            return arr[0]
+        elif n == 2:
+            return -1
+        else:
+             for i in arr:
+                if i in d:
+                     d[i] = d[i]+1
+            
+                else:
+                    d[i]=1
+                
+        
+        for num, count in d.items():
+            if count > n // 2:
+                return num
+        return -1

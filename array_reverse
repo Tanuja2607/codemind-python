@@ -1,0 +1,8 @@
+n = int(input())
+arr = list(map(int, input().split()))
+def print_reverse(arr, index):
+    if index < 0:
+        return
+    print(arr[index], end=" ")
+    print_reverse(arr, index - 1)
+print_reverse(arr, n - 1)

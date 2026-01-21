@@ -1,0 +1,4 @@
+X = int(input().strip())
+remaining_money = X - 100
+popcorn_buckets = remaining_money // 50
+print(popcorn_buckets)

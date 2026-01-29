@@ -1,0 +1,15 @@
+mainTank, additionalTank = map(int, input().split())
+
+distance = 0
+used = 0  # litres used from main tank
+
+while mainTank > 0:
+    mainTank -= 1
+    used += 1
+    distance += 10
+
+    if used % 5 == 0 and additionalTank > 0:
+        mainTank += 1
+        additionalTank -= 1
+
+print(distance)

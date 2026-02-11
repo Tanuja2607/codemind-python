@@ -1,0 +1,6 @@
+
+X = int(input())
+scheme1_total = 100 + 4 * X
+scheme2_total = 300
+minimum_payment = min(scheme1_total, scheme2_total)
+print(minimum_payment)

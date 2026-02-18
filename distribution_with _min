@@ -1,0 +1,11 @@
+# cook your dish here
+T = int(input())
+
+for _ in range(T):
+    X, Y, N = map(int, input().split())
+    melted = Y * N
+    remaining = X - melted
+    if remaining > 0:
+        print(remaining)
+    else:
+        print(0)

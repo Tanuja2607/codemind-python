@@ -1,0 +1,6 @@
+def winner(arr, m, n):
+    count_Ram = count_Rohan = 0
+    for i in range(len(arr)):
+        count_Ram += (arr[i]%m == 0)
+        count_Rohan += (arr[i]%n == 0)
+    return "Both" if count_Ram == count_Rohan else ("Ram" if count_Ram > count_Rohan else "Rohan")

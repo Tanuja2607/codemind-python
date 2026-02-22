@@ -1,0 +1,12 @@
+class Solution:
+	def twoSum(self, arr, target):
+
+        map = {}
+        for i, num in enumerate(arr):
+            
+            num2 = target - num
+            
+            if num2 in map: return True
+            else: map.update({num:i})
+            
+        return False

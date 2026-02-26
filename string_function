@@ -1,0 +1,5 @@
+s=input().strip()
+if s[-3:]=="nta":
+    print("yes")
+else:
+    print("no")

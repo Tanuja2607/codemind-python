@@ -1,0 +1,8 @@
+a,b,c,d = list(map(int, input().split()))
+s=a*b*c
+if s>d**3:
+    print('Cuboid')
+elif s<d**3:
+    print("Cube")
+else:
+    print("Equal")
